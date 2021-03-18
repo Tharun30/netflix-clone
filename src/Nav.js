@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./Nav.css";
-
 function Nav() {
   const [show, handleshow] = useState(false)
-
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
@@ -30,5 +28,4 @@ function Nav() {
     </div>
   )
 }
-
 export default Nav
